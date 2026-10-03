@@ -34,5 +34,5 @@ First we compiled the kernel module pmu_enable.c and installed the pmu_enable.ko
 
 ## AVX
 
-For version 2.1 we executed "sudo ./bench_v2_avx.sh". So far we tested the Row-wise method on AVX and it passes the KAT's but we still do not have measures for it. In order to acquire measures one should execute "sudo ./bench_v3_avx.sh".
+For version 2.1 we executed "sudo ./bench_v2_avx.sh". For version 3, in order to acquire measures one should execute "sudo ./bench_v3_avx.sh".
 
