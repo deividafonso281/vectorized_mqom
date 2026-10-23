@@ -1,6 +1,5 @@
 #!/bin/bash
 
-DATA=$(date '+%Y%m%d')
 
 for dir in "Row-wise_v3/Optimized_Implementation"*/; do
     for subdir in "$dir"*/; do
@@ -13,7 +12,7 @@ for dir in "Row-wise_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_avx512_gfni_gcc_$DATA.txt"
+        ./bench 5000 > "bench_avx512_gfni_gcc.txt"
 
         sed -i '1s/.*/FORCE_PLATFORM_AVX2_VAES=1/' Makefile
 
@@ -21,7 +20,7 @@ for dir in "Row-wise_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_avx2_gcc_$DATA.txt"
+        ./bench 5000 > "bench_avx2_gcc.txt"
 
         make clean
 
@@ -41,7 +40,7 @@ for dir in "Reference_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_avx512_gfni_gcc_$DATA.txt"
+        ./bench 5000 > "bench_avx512_gfni_gcc.txt"
 
         sed -i '1s/.*/FORCE_PLATFORM_AVX2_VAES=1/' Makefile
 
@@ -49,7 +48,7 @@ for dir in "Reference_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_avx2_gcc_$DATA.txt"
+        ./bench 5000 > "bench_avx2_gcc.txt"
 
         make clean
 

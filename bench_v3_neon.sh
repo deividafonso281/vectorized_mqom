@@ -1,7 +1,5 @@
 #!/bin/bash
 
-DATA=$(date '+%Y%m%d')
-
 for dir in "Row-wise_v3/Optimized_Implementation"*/; do
     for subdir in "$dir"*/; do
         echo "👉 Processando $subdir"
@@ -13,7 +11,7 @@ for dir in "Row-wise_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_neon_$DATA.txt"
+        ./bench 5000 > "bench_neon.txt"
 
         make clean
 
@@ -33,7 +31,7 @@ for dir in "Reference_v3/Optimized_Implementation"*/; do
 
         make bench
 
-        ./bench 5000 > "bench_neon_$DATA.txt"
+        ./bench 5000 > "bench_neon.txt"
 
         make clean
 

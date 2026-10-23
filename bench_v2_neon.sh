@@ -1,7 +1,5 @@
 #!/bin/bash
 
-DATA=$(date '+%Y%m%d')
-
 for dir in "NEON/Row-wise"*/; do
 
     echo "👉 Processando $dir"
@@ -11,7 +9,7 @@ for dir in "NEON/Row-wise"*/; do
 
     make bench
 
-    ./bench 5000 > "bench_camera_ready_$DATA.txt"
+    ./bench 5000 > "bench_neon.txt"
 
     make clean
 
@@ -29,7 +27,7 @@ for dir in "NEON/Multiplication_NOT_Transposed"*/; do
 
     make bench
 
-    ./bench 5000 > "bench_camera_ready_$DATA.txt"
+    ./bench 5000 > "bench_neon.txt"
 
     make clean
 

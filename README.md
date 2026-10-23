@@ -36,3 +36,13 @@ First we compiled the kernel module pmu_enable.c and installed the pmu_enable.ko
 
 For version 2.1 we executed "sudo ./bench_v2_avx.sh". For version 3, in order to acquire measures one should execute "sudo ./bench_v3_avx.sh".
 
+## Reproducing the tables
+
+### Tables 2-5
+
+After executing both "sudo ./profile.sh v2_neon" and "sudo ./bench_v2_avx.sh" in the respective platform, in order to generate Tables 2-5 one should execute the script format_table*.py with * being the desired table. 
+
+### Tables 6-8
+
+After executing both "sudo ./profile.sh v3_neon" and "sudo ./bench_v3_avx.sh" in the respective platform, in order to generate Tables 6-8 one should execute the script format_table*.py with * being the desired table.
+
