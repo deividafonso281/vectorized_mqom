@@ -48,4 +48,4 @@ After executing both "sudo ./profile.sh v3_neon" and "sudo ./bench_v3_avx.sh" in
 
 ### Barplots
 
-After executing both "sudo ./profile.sh v2_neon" and "sudo ./bench_v2_avx.sh" in the respective platform, in order to generate the barplots one should execute the script format_*_gains.py with * being either "keygen", "sign" or "verify". 
+After executing both "sudo ./profile.sh v2_neon" and "sudo ./bench_v2_avx.sh" in the respective platform, in order to generate the barplots one should execute the script format_*_gains.py with * being either "keygen" (corresponds to Figure 6), "sign" (corresponds to Figure 7) or "verify" (corresponds to Figure 8). 
