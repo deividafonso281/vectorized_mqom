@@ -2,6 +2,8 @@
 
 This repository contains the code of the Paper "Efficient Vectorized Implementation of MQOM" submitted to TCHES 2027. The code was created modifying the reference code available at [MQOM](https://mqom.org/resources.html) and thus should have the same license reproduced in the file "LICENSE".
 
+The authors are David Santos, Julio López and Francisco Rodríguez-Henríquez and their emails d261032@dac.unicamp.br , jlopez@ic.unicamp.br and francisco.rodriguez@tii.ae .
+
 The structure of the repository is as follows:
 
 AVX: holds the code used in the experiments for MQOM version 2.1 on Intel platforms. There are implementations for the Reference code, code using the Row-wise multiplication method and code using the Column-wise multiplication method (only for GF(16) variants). The reference code was modified to have granular measurements of the amount of clock cycles spent in each step of the verification.
