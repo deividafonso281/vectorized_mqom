@@ -22,9 +22,9 @@ Row-wise_v3: holds the code of MQOM version 3 adapted to use the packed vector-m
 
 # Platforms Used
 
-We executed the NEON code on a Raspberry Pi 5 with a Cortex-A76 processor and it was necessary to have sudo privileges.
+We executed the NEON code on a Raspberry Pi 5 with a Cortex-A76 processor and it was necessary to have sudo privileges. For ARM NEON the gcc version used was 12.2.0 .
 
-We executed the AVX code on an 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz with HyperThreading and TurboBoost disabled. 
+We executed the AVX code on an 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz with HyperThreading and TurboBoost disabled.  For Intel AVX the gcc version used was GCC 11.4.0 .
 
 # Instructions for benchmarks
 
