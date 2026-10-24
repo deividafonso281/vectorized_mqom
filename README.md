@@ -1,6 +1,6 @@
 # Vectorized MQOM
 
-This repository contains the code of the Paper "Efficient Vectorized Implementation of MQOM" submitted to TCHES 2027. The code was created modifying the reference code available at [MQOM](https://mqom.org/resources.html) and thus should have the same license.
+This repository contains the code of the Paper "Efficient Vectorized Implementation of MQOM" submitted to TCHES 2027. The code was created modifying the reference code available at [MQOM](https://mqom.org/resources.html) and thus should have the same license reproduced in the file "LICENSE".
 
 The structure of the repository is as follows:
 
