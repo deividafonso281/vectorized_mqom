@@ -24,7 +24,7 @@ for dir in "AVX/Row-wise"/; do
         make clean
 
         echo "👉 Bench's feitos :)"
-        cd ../..
+        cd ../../..
     done 
 done
 
@@ -52,7 +52,7 @@ for dir in "AVX/Reference"*/; do
         make clean
 
         echo "👉 Bench's feitos :)"
-        cd ../..
+        cd ../../..
     done 
 done
 

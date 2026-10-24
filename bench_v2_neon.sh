@@ -1,38 +1,38 @@
 #!/bin/bash
 
 for dir in "NEON/Row-wise"*/; do
+    for subdir in "$dir"*/; do
+        echo "👉 Processando $subdir"
+        cd "$subdir"
 
-    echo "👉 Processando $dir"
-    cd "$dir"
+        make clean
 
-    make clean
+        make bench
 
-    make bench
+        ./bench 5000 > "bench_neon.txt"
 
-    ./bench 5000 > "bench_neon.txt"
+        make clean
 
-    make clean
-
-    echo "👉 Bench's feitos :)"
-    cd ..
-
+        echo "👉 Bench's feitos :)"
+        cd ../../..
+    done
 done
 
 for dir in "NEON/Multiplication_NOT_Transposed"*/; do
+    for subdir in "$dir"*/; do
+        echo "👉 Processando $subdir"
+        cd "$subdir"
 
-    echo "👉 Processando $dir"
-    cd "$dir"
+        make clean
 
-    make clean
+        make bench
 
-    make bench
+        ./bench 5000 > "bench_neon.txt"
 
-    ./bench 5000 > "bench_neon.txt"
+        make clean
 
-    make clean
-
-    echo "👉 Bench's feitos :)"
-    cd ..
-
+        echo "👉 Bench's feitos :)"
+        cd ../../..
+    done
 done
 
